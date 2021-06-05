@@ -134,9 +134,11 @@ y=df['lntc']
 # print(vif)
 
 
-series1 = pd.Series([2,3,4,5,6,7,8])
-series2 = pd.Series([3,4,5,None,7,8,9])
 
-from scipy import interpolate
+# 失败的线性插值的实验
+# series1 = pd.Series([2,3,4,5,6,7,8])
+# series2 = pd.Series([3,4,5,None,7,8,9])
 
-print(interpolate.interp1d(series1, series2, kind='linear'))
+# from scipy import interpolate
+
+# print(interpolate.interp1d(series1, series2, kind='linear'))
