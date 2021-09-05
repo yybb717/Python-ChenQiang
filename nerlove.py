@@ -27,7 +27,7 @@ print('满足Q>=10000条件的变量TC和Q:\n',df.loc[df.Q>=10000,['TC','Q']])
 
 # 考察变量的统计特征
 df.describe()  # 所有变量统计特征
-df.describe()['Q'] # 变量Q的统计特征
+# df.describe()['Q'] # 变量Q的统计特征
 df.drop(['TC','Q'],axis=1).corr(method='pearson', min_periods=1) # 三个价格变量PL、PF、PK的相关系数
 
 # 画图
@@ -178,3 +178,6 @@ contat1=pd.concat([pd.Series(leverage,name='leverage'),
 outliers = pd.concat([df,contat1],axis=1)
 # 按照杠杆值降序排序，找到杠杆值最大的三个数据
 outliers.sort_values(by='leverage',axis=0,ascending=False).head(3)
+
+
+
